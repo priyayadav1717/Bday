@@ -1,0 +1,79 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.background-text {
+  font-size: 2em;
+  color: #ff69b4;
+  margin-top: 20px;
+  text-shadow: 0 0 15px #ff1493;
+}
+
+.card {
+  background: rgba(255, 105, 180, 0.1);
+  border: 2px solid #ff69b4;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 600px;
+  box-shadow: 0 0 20px #ff69b4;
+}
+
+.message {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.sparkle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sparkle {
+  font-size: 2em;
+  color: #ffd700;
+  animation: twinkle 1.5s infinite;
+}
+
+.gift-box {
+  font-size: 4em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gift-box:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.gift-content {
+  display: none;
+  margin-top: 30px;
+}
+
+.gift-content img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ffb6c1;
+}
+
+.car-caption {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #ffb6c1;
+}
+
+@keyframes twinkle {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
